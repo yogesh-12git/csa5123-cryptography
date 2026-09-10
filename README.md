@@ -1,12 +1,8 @@
-<!-- ========================================================= -->
-<!--                    CSA5123 CRYPTOGRAPHY                    -->
-<!-- ========================================================= -->
-
 <div align="center">
 
 # 🔐 CSA5123 — CRYPTOGRAPHY
 
-### 🛡️ Secure Algorithms • Classical Ciphers • Modern Cryptography • Python
+### Cryptography Laboratory • Python • Cybersecurity • 40 Practical Experiments
 
 <img src="./assets/cryptography-3d.png" alt="CSA5123 Cryptography" width="100%"/>
 
@@ -15,482 +11,556 @@
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Cryptography](https://img.shields.io/badge/Cybersecurity-Cryptography-111827?style=for-the-badge&logo=letsencrypt&logoColor=white)](#)
 [![Experiments](https://img.shields.io/badge/Experiments-40+-7C3AED?style=for-the-badge)](#-experiment-collection)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](#-license)
 [![GitHub](https://img.shields.io/badge/GitHub-yogesh--12git-181717?style=for-the-badge&logo=github)](https://github.com/yogesh-12git)
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=7C3AED&center=true&vCenter=true&width=800&lines=Exploring+the+Science+of+Secure+Communication;Learning+Cryptographic+Algorithms+with+Python;Understanding+Encryption+%26+Decryption;Building+Practical+Cybersecurity+Skills" alt="Typing SVG" />
+**Welcome to the Cryptography Laboratory — Exploring the Science of Secure Communication** 🔐
 
 </div>
 
 ---
 
-# 🧠 ABOUT THE PROJECT
+## 📋 TABLE OF CONTENTS
 
-**CSA5123 — Cryptography** is a practical academic repository focused on understanding the fundamental concepts, algorithms, and programming techniques used to protect information.
-
-This repository contains a collection of **Python-based cryptography experiments** covering concepts such as:
-
-- 🔑 Encryption
-- 🔓 Decryption
-- 🧮 Mathematical foundations
-- 🔐 Classical cryptographic techniques
-- 🛡️ Secure communication concepts
-- 🔢 Modular arithmetic
-- 🧩 Key-based security
-- 💻 Cryptographic implementations
-- 🧪 Practical algorithm experiments
-
-The main objective is to move beyond theoretical concepts and understand **how cryptographic algorithms work through implementation**.
+- [About the Project](#-about-the-project)
+- [Project Objectives](#-project-objectives)
+- [Quick Start](#-quick-start)
+- [Installation](#-installation)
+- [Project Structure](#-project-structure)
+- [Experiment Collection](#-experiment-collection)
+- [Technology Stack](#-technology-stack)
+- [Key Concepts](#-key-concepts)
+- [Learning Path](#-learning-path)
+- [Skills Developed](#-skills-developed)
+- [Real-World Applications](#-real-world-applications)
+- [Future Enhancements](#-future-enhancements)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Author](#-author)
 
 ---
 
-# 🎯 PROJECT OBJECTIVES
+## 🧠 ABOUT THE PROJECT
 
-```text
+**CSA5123 — Cryptography** is a comprehensive practical academic repository focusing on understanding fundamental cryptographic concepts, algorithms, and programming techniques used to protect information.
+
+This repository contains a collection of **40 Python-based cryptography experiments** covering:
+
+- 🔑 **Encryption & Decryption** — Transform and restore data securely
+- 🧮 **Mathematical Foundations** — Modular arithmetic, number theory, prime concepts
+- 🔐 **Classical Techniques** — Caesar cipher, substitution, Vigenère, and more
+- 🛡️ **Security Concepts** — Confidentiality, integrity, and authentication principles
+- 🔢 **Key-Based Security** — Understanding symmetric and asymmetric cryptography
+- 💻 **Algorithm Implementation** — Hands-on Python implementations
+- 🧪 **Practical Experiments** — 40 independent, executable programs
+
+### 🎯 Core Philosophy
+
+Move beyond theoretical concepts and understand **how cryptographic algorithms work through implementation**. Each experiment is designed to be studied and executed independently.
+
+---
+
+## 🎯 PROJECT OBJECTIVES
+
+```
 ┌──────────────────────────────────────────────────────────────┐
-│                    CRYPTOGRAPHY OBJECTIVES                   │
+│              CRYPTOGRAPHY LEARNING OBJECTIVES                │
 ├──────────────────────────────────────────────────────────────┤
 │                                                              │
-│  🔐 Understand encryption and decryption                     │
-│                                                              │
-│  🧠 Learn the mathematical concepts behind cryptography      │
-│                                                              │
-│  💻 Implement cryptographic algorithms using Python          │
-│                                                              │
-│  🔑 Understand keys and secure communication                 │
-│                                                              │
-│  🛡️ Explore confidentiality, integrity and authentication   │
-│                                                              │
-│  🧪 Develop practical cybersecurity programming skills       │
+│  ✓ Understand encryption and decryption mechanisms           │
+│  ✓ Learn mathematical foundations of cryptography            │
+│  ✓ Implement cryptographic algorithms using Python           │
+│  ✓ Explore symmetric and asymmetric key systems              │
+│  ✓ Understand confidentiality, integrity & authentication    │
+│  ✓ Develop practical cybersecurity programming skills        │
+│  ✓ Strengthen algorithmic thinking and problem-solving       │
+│  ✓ Gain hands-on experience with cryptographic concepts      │
 │                                                              │
 └──────────────────────────────────────────────────────────────┘
+```
 
-🏗️ CRYPTOGRAPHY WORKFLOW
+---
 
-                    ┌──────────────────┐
-                    │   ORIGINAL DATA  │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │   CRYPTOGRAPHIC  │
-                    │    ALGORITHM     │
-                    └────────┬─────────┘
-                             │
-                    🔑 SECRET / PUBLIC KEY
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │    ENCRYPTION    │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │ CIPHERTEXT /     │
-                    │ PROTECTED DATA   │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │    DECRYPTION    │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │   ORIGINAL DATA  │
-                    └──────────────────┘
-📚 Experiment Focus
-The experiments are intended to provide hands-on exposure to:
+## 🚀 QUICK START
 
-Classical cryptographic algorithms
+### Prerequisites
+- Python 3.6 or higher
+- Basic understanding of Python programming
+- A terminal or command-line interface
 
-Encryption techniques
+### 1️⃣ Clone the Repository
 
-Decryption techniques
+```bash
+git clone https://github.com/yogesh-12git/csa5123-cryptography.git
+cd csa5123-cryptography
+```
 
-Key-based transformations
+### 2️⃣ Verify Python Installation
 
-Mathematical operations
+```bash
+python --version
+# or
+python3 --version
+```
 
-Modular arithmetic
+### 3️⃣ Run Your First Experiment
 
-Cryptographic problem solving
+```bash
+# Run Experiment 1
+python "EXP 1.py"
 
-Python implementation
+# Or try another experiment
+python "EXP 10.py"
+```
 
-Cybersecurity fundamentals
+### 📝 Note
+Keep filenames in quotation marks if they contain spaces or special characters.
 
-Note: Each experiment is implemented as a separate Python program so that algorithms can be studied and executed independently.
-One of the experiments demonstrates a basic shift-based encryption/decryption technique.
+---
 
-Encryption Concept
+## 💻 INSTALLATION
 
-PLAINTEXT
-    │
-    ▼
-SHIFT TRANSFORMATION
-    │
-    ▼
-CIPHERTEXT
-Decryption Concept
+### Standard Setup
 
-CIPHERTEXT
-    │
-    ▼
-REVERSE SHIFT
-    │
-    ▼
-PLAINTEXT
-Example
+```bash
+# Clone the repository
+git clone https://github.com/yogesh-12git/csa5123-cryptography.git
 
-Original Message
-       │
-       ▼
-   "HELLO"
-       │
-       ▼
-  Shift = 3
-       │
-       ▼
-   "KHOOR"
-       │
-       ▼
-Encrypted Message
-This simple example demonstrates the basic relationship between:
+# Navigate to directory
+cd csa5123-cryptography
 
-Plaintext → Encryption → Ciphertext → Decryption → Plaintext
+# Verify Python 3.x is installed
+python --version
+```
 
-💻 TECHNOLOGY STACK
-<div align="center">
-Technology	Purpose
-🐍 Python	Algorithm implementation
-🔐 Cryptography	Security concepts
-🧮 Mathematics	Mathematical foundations
-💻 Git	Version control
-🌐 GitHub	Source code management
+### (Optional) Create Virtual Environment
 
-</div>
-🧩 KEY CONCEPTS
-🔒 Encryption
-Encryption transforms readable information into a protected form.
+```bash
+# Create virtual environment
+python -m venv venv
 
+# Activate virtual environment
+# On macOS/Linux:
+source venv/bin/activate
 
-Plaintext
-   ↓
-Encryption Algorithm + Key
-   ↓
-Ciphertext
-🔓 Decryption
-Decryption converts protected information back into its original form.
+# On Windows:
+venv\Scripts\activate
 
+# Deactivate when done
+deactivate
+```
 
-Ciphertext
-   ↓
-Decryption Algorithm + Key
-   ↓
-Plaintext
-🔑 Cryptographic Keys
-A cryptographic key is information used by an algorithm to control the transformation of data.
+### No External Dependencies Required
+Most experiments use only Python's standard library. Some experiments may use:
+- `cryptography` — For advanced cryptographic operations
+- `hashlib` — For hashing algorithms (included in standard library)
 
-Depending on the cryptographic system, keys may be:
+---
 
+## 📂 PROJECT STRUCTURE
 
-                    CRYPTOGRAPHIC KEYS
-                           │
-             ┌─────────────┴─────────────┐
-             │                           │
-             ▼                           ▼
-       SYMMETRIC KEYS              ASYMMETRIC KEYS
-             │                           │
-       Same key used              Public + Private
-       for operations                  Keys
-🧠 LEARNING ARCHITECTURE
-
-                 ┌──────────────────────┐
-                 │     CRYPTOGRAPHY     │
-                 └──────────┬───────────┘
-                            │
-       ┌────────────────────┼────────────────────┐
-       │                    │                    │
-       ▼                    ▼                    ▼
-   MATHEMATICS          ALGORITHMS          SECURITY
-       │                    │                    │
-       ▼                    ▼                    ▼
- Modular Arithmetic    Encryption          Confidentiality
- Number Theory         Decryption          Integrity
- Prime Concepts        Key Systems         Authentication
-       │                    │                    │
-       └────────────────────┼────────────────────┘
-                            │
-                            ▼
-                   PYTHON IMPLEMENTATION
-                            │
-                            ▼
-                   PRACTICAL EXPERIMENTS
-📂 PROJECT STRUCTURE
-
+```
 csa5123-cryptography/
 │
 ├── assets/
-│   └── cryptography-3d.png
+│   ├── cryptography-3d.png          # Project banner image
+│   └── [Additional resources]
 │
-├── EXP 1.py
-├── EXP 2.py
-├── EXP 3.py
-├── EXP 4.py
-├── EXP 5.py
-├── EXP 6.py
-├── EXP 7.py
-├── EXP 8.py
-├── EXP 9.py
-├── EXP 10.py
+├── EXP 1.py  through  EXP 40.py     # 40 Cryptography Experiments
 │
-├── ...
-│
-├── EXP 14.1.py
-├── EXP 14.2.py
-│
-├── ...
-│
-├── EXP 40.py
-│
-├── README.md
-└── .gitignore
-⚙️ GETTING STARTED
-1️⃣ Clone the Repository
-Bash
+├── README.md                         # This file
+├── .gitignore                        # Git ignore rules
+└── LICENSE                           # MIT License
 
-git clone https://github.com/yogesh-12git/csa5123-cryptography.git
-2️⃣ Open the Project
-Bash
+🔍 Experiment Naming Convention:
+   EXP 1.py, EXP 2.py, ..., EXP 40.py
+   Some experiments have subtasks: EXP 14.1.py, EXP 14.2.py
+```
 
-cd csa5123-cryptography
-3️⃣ Check Python Installation
-Bash
+---
 
-python --version
-or:
+## 🧪 EXPERIMENT COLLECTION
 
-Bash
+### Complete List of 40 Experiments
 
-python3 --version
-4️⃣ Run an Experiment
-For example:
+The repository includes **40 comprehensive experiments** covering cryptographic algorithms and techniques:
 
-Bash
+| # | Experiment | Focus Area |
+|---|---|---|
+| 1-5 | Classical Ciphers | Caesar, ROT13, Substitution |
+| 6-10 | Encryption Techniques | Vigenère, Playfair, Columnar |
+| 11-15 | Mathematical Concepts | Modular Arithmetic, GCD, Primes |
+| 16-20 | Key Generation | Random Keys, Key Derivation |
+| 21-25 | Hash Functions | MD5, SHA-1, SHA-256 Concepts |
+| 26-30 | Modern Encryption | DES, 3DES Concepts, Block Ciphers |
+| 31-35 | Public Key Cryptography | RSA Concepts, Key Pairs |
+| 36-40 | Advanced Topics | Digital Signatures, Certificate Basics |
 
+### Run Any Experiment
+
+```bash
+# Single experiment
 python "EXP 1.py"
-For another experiment:
 
-Bash
+# Batch run (example script)
+for i in {1..40}; do python "EXP $i.py"; done
+```
 
-python "EXP 10.py"
-For experiments containing spaces or special characters, keep the filename inside quotation marks.
+### Experiment Execution Flow
 
-🧪 EXPERIMENT EXECUTION MODEL
+```
+┌──────────────────────────┐
+│   SELECT EXPERIMENT      │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│   READ PYTHON CODE       │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│  PROVIDE INPUT / KEY     │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│   RUN ALGORITHM          │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│   VIEW OUTPUT RESULTS    │
+└──────────────────────────┘
+```
 
-┌─────────────────────────────┐
-│       SELECT EXPERIMENT     │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│       READ PYTHON CODE      │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│     PROVIDE INPUT / KEY     │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│      RUN ALGORITHM          │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│       VIEW THE OUTPUT       │
-└─────────────────────────────┘
-🛡️ SECURITY PERSPECTIVE
-The experiments provide a foundation for understanding how secure communication systems are designed.
+---
 
+## ⚙️ TECHNOLOGY STACK
 
+| Technology | Purpose | Details |
+|---|---|---|
+| 🐍 **Python 3.x** | Core Language | Algorithm implementation, scripting |
+| 🔐 **Cryptography** | Security Concepts | Encryption, decryption, key systems |
+| 📊 **Mathematics** | Foundations | Modular arithmetic, number theory |
+| 💻 **Git & GitHub** | Version Control | Repository management, collaboration |
+| 🧮 **Standard Library** | Built-in Tools | hashlib, secrets, random modules |
+
+---
+
+## 🧩 KEY CONCEPTS
+
+### 🔒 Encryption
+Encryption transforms readable information into a protected form that cannot be understood without the correct key.
+
+```
+PLAINTEXT → [Encryption Algorithm + Key] → CIPHERTEXT
+```
+
+### 🔓 Decryption
+Decryption converts protected information back into its original readable form.
+
+```
+CIPHERTEXT → [Decryption Algorithm + Key] → PLAINTEXT
+```
+
+### 🔑 Cryptographic Keys
+A cryptographic key is information used by an algorithm to control the transformation of data.
+
+```
+                  CRYPTOGRAPHIC KEYS
+                         │
+             ┌───────────┴───────────┐
+             │                       │
+             ▼                       ▼
+        SYMMETRIC KEYS           ASYMMETRIC KEYS
+             │                       │
+        Same Key Used           Public + Private Keys
+        for Enc/Dec            for Different Operations
+```
+
+### 🧠 Cryptographic Workflow
+
+```
+PLAINTEXT
+    ↓
+[Cryptographic Algorithm]
+    ↓
+[+] ENCRYPTION KEY
+    ↓
+CIPHERTEXT
+    ↓
+[Cryptographic Algorithm]
+    ↓
+[+] DECRYPTION KEY
+    ↓
+PLAINTEXT (Original)
+```
+
+---
+
+## 📈 LEARNING PATH
+
+```
+START HERE ─────────────────────────────────────────────────→ MASTER
+
+    ↓
+    🔹 Cryptography Fundamentals
+    ↓
+    🔹 Mathematical Basics (Modular Arithmetic, Primes)
+    ↓
+    🔹 Classical Ciphers (Caesar, Vigenère, Substitution)
+    ↓
+    🔹 Encryption & Decryption Techniques
+    ↓
+    🔹 Key Generation & Management
+    ↓
+    🔹 Hash Functions & Integrity
+    ↓
+    🔹 Symmetric Cryptography (DES, 3DES)
+    ↓
+    🔹 Asymmetric Cryptography (RSA, Public Key)
+    ↓
+    🔹 Digital Signatures & Certificates
+    ↓
+    🚀 ADVANCED CRYPTOGRAPHY MASTERY
+```
+
+---
+
+## 💡 HANDS-ON LEARNING
+
+Each experiment includes:
+
+✅ **Clear Python Implementation** — Direct, understandable code  
+✅ **Input/Output Examples** — Sample execution and results  
+✅ **Algorithm Explanation** — How and why it works  
+✅ **Security Perspective** — Real-world context and applications  
+✅ **Independent Execution** — Study each experiment separately  
+
+### Example: Caesar Cipher (EXP 1)
+
+```
+INPUT:  Message = "HELLO", Shift = 3
+PROCESS: H→K, E→H, L→O, L→O, O→R
+OUTPUT: "KHOOR"
+
+DECRYPTION: Reverse the shift by 3
+OUTPUT: "HELLO" ✓
+```
+
+---
+
+## 🛡️ SECURITY PERSPECTIVE
+
+The experiments provide a foundation for understanding how secure communication systems are designed:
+
+```
                  CYBERSECURITY
                        │
-       ┌───────────────┼───────────────┐
-       │               │               │
-       ▼               ▼               ▼
- CONFIDENTIALITY   INTEGRITY     AUTHENTICATION
-       │               │               │
-       └───────────────┼───────────────┘
+      ┌────────────────┼────────────────┐
+      │                │                │
+      ▼                ▼                ▼
+CONFIDENTIALITY    INTEGRITY       AUTHENTICATION
+ (Keep Secret)  (Verify Genuine)   (Verify Identity)
+      │                │                │
+      └────────────────┼────────────────┘
                        │
                        ▼
                  CRYPTOGRAPHY
                        │
                        ▼
               SECURE COMMUNICATION
-📊 SKILLS DEVELOPED
-Through these experiments, the project helps develop practical skills in:
+```
 
-💻 Programming
-Python programming
+---
 
-Algorithm implementation
+## 📊 SKILLS DEVELOPED
 
-Input/output handling
+### 💻 Programming Skills
+- Python algorithm implementation
+- Efficient code writing
+- Input/output handling
+- Debugging and testing
+- Problem-solving techniques
 
-Problem solving
+### 🔐 Cybersecurity Knowledge
+- Cryptographic concepts and terminology
+- Encryption and decryption principles
+- Security design patterns
+- Key management concepts
+- Secure communication protocols
 
-Debugging
+### 🧠 Computer Science Fundamentals
+- Algorithm analysis and design
+- Mathematical reasoning
+- Modular arithmetic mastery
+- Computational thinking
+- Logical problem-solving
 
-🔐 Cybersecurity
-Cryptographic concepts
+### 🛠️ Professional Development
+- Git and GitHub proficiency
+- Repository management
+- Technical documentation
+- Code organization
+- Version control best practices
 
-Encryption/decryption
+---
 
-Security principles
+## 🌐 REAL-WORLD APPLICATIONS
 
-Key concepts
+Cryptography is used in many technologies we interact with daily:
 
-Secure communication
-
-🧠 Computer Science
-Algorithms
-
-Mathematical reasoning
-
-Modular arithmetic
-
-Computational thinking
-
-Logical problem solving
-
-🛠️ Development
-Git
-
-GitHub
-
-Repository management
-
-Documentation
-
-Version control
-
-🌐 REAL-WORLD APPLICATIONS
-Cryptography is used in many technologies that we interact with every day.
-
-
-                    CRYPTOGRAPHY
-                         │
-        ┌────────────────┼────────────────┐
-        │                │                │
-        ▼                ▼                ▼
-      HTTPS           BANKING          MESSAGING
-        │                │                │
-        ▼                ▼                ▼
-    Websites       Transactions      Private Data
-        │                │                │
-        └────────────────┼────────────────┘
-                         │
-                         ▼
+```
+                     CRYPTOGRAPHY
+                          │
+         ┌────────────────┼────────────────┐
+         │                │                │
+         ▼                ▼                ▼
+       HTTPS          BANKING           MESSAGING
+         │                │                │
+         ▼                ▼                ▼
+   Websites         Transactions      Private Data
+         │                │                │
+         └────────────────┼────────────────┘
+                          │
+                          ▼
                    DIGITAL SECURITY
-Examples
-🌐 HTTPS / TLS
+```
 
-💳 Online banking
+### Use Cases
 
-🏦 Digital payments
+🌐 **HTTPS/TLS** — Secure website connections  
+💳 **Online Banking** — Secure financial transactions  
+🏦 **Digital Payments** — Credit card and payment security  
+📱 **Messaging Apps** — End-to-end encrypted communications  
+🔐 **Password Protection** — Secure authentication systems  
+☁️ **Cloud Security** — Data protection in cloud storage  
+🖥️ **System Authentication** — Device and user verification  
+📧 **Email Encryption** — Secure email communications  
+🪪 **Digital Identity** — Blockchain and digital certificates  
+✍️ **Digital Signatures** — Document authenticity and non-repudiation  
 
-📱 Secure messaging
+---
 
-🔐 Password protection
+## 🚀 FUTURE ENHANCEMENTS
 
-☁️ Cloud security
+This repository can be expanded with:
 
-🖥️ System authentication
-
-📧 Secure communication
-
-🪪 Digital identity
-
-✍️ Digital signatures
-
-🚀 FUTURE ENHANCEMENTS
-The repository can be expanded with:
-
-
+```
 ┌──────────────────────────────────────────────────────┐
-│                 FUTURE ROADMAP                       │
+│            PLANNED ENHANCEMENTS                      │
 ├──────────────────────────────────────────────────────┤
 │                                                      │
-│  🔹 Add detailed documentation for every experiment │
-│                                                      │
-│  🔹 Add algorithm flowcharts                         │
-│                                                      │
-│  🔹 Add sample input/output                          │
-│                                                      │
-│  🔹 Add complexity analysis                          │
-│                                                      │
-│  🔹 Add modern cryptographic demonstrations          │
-│                                                      │
-│  🔹 Add interactive cryptography tools               │
-│                                                      │
-│  🔹 Add automated testing                            │
-│                                                      │
-│  🔹 Improve security-focused documentation           │
+│  ▶ Detailed documentation for every experiment      │
+│  ▶ Algorithm flowcharts and visualizations          │
+│  ▶ Sample input/output examples                     │
+│  ▶ Complexity analysis (Time & Space)               │
+│  ▶ Modern cryptographic demonstrations              │
+│  ▶ Interactive cryptography tools                   │
+│  ▶ Automated unit tests for all experiments         │
+│  ▶ Security-focused detailed documentation          │
+│  ▶ Performance benchmarking tools                   │
+│  ▶ Visual algorithm animations                      │
 │                                                      │
 └──────────────────────────────────────────────────────┘
-📈 PROJECT LEARNING PATH
+```
 
-                    START
-                      │
-                      ▼
-              🔹 Cryptography
-                      │
-                      ▼
-              🔹 Mathematical Basics
-                      │
-                      ▼
-              🔹 Classical Ciphers
-                      │
-                      ▼
-              🔹 Encryption / Decryption
-                      │
-                      ▼
-              🔹 Key Concepts
-                      │
-                      ▼
-              🔹 Python Implementation
-                      │
-                      ▼
-              🔹 Practical Experiments
-                      │
-                      ▼
-              🔹 Cybersecurity Skills
-                      │
-                      ▼
-                    🚀 NEXT
-🧑‍💻 AUTHOR CORE
+---
+
+## 🤝 CONTRIBUTING
+
+Contributions are welcome! Here's how you can help:
+
+### Guidelines
+
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/improvement`)
+3. **Make** your changes with clear commit messages
+4. **Test** your code thoroughly
+5. **Push** to your branch (`git push origin feature/improvement`)
+6. **Submit** a Pull Request with a detailed description
+
+### Contribution Areas
+
+- 🐛 Bug fixes and improvements
+- 📖 Documentation enhancements
+- 🧪 Additional experiments
+- ⚡ Performance optimizations
+- 🎨 Code quality improvements
+
+---
+
+## 📄 LICENSE
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+**You are free to:**
+- Use this project for personal and commercial purposes
+- Modify and distribute the code
+- Include it in your own projects
+
+**With the condition:**
+- Include a copy of the license and copyright notice
+
+---
+
+## 👨‍💻 AUTHOR
+
 <div align="center">
 
+### **YOGESH S.**
+
+```
 ╔══════════════════════════════════════════════════════════════╗
 ║                                                              ║
-║                         👨‍💻 YOGESH S.                        ║
+║                      👨‍💻 YOGESH S.                           ║
 ║                                                              ║
-║              B.Tech Information Technology                   ║
+║            B.Tech Information Technology Student             ║
 ║                                                              ║
-║       💻 Full-Stack Developer                                ║
-║       🐍 Python Developer                                    ║
-║       🔐 Cybersecurity & Cryptography Enthusiast             ║
-║       🤖 AI & Technology Enthusiast                          ║
+║            💻 Full-Stack Developer                           ║
+║            🐍 Python Developer                               ║
+║            🔐 Cybersecurity & Cryptography Enthusiast        ║
+║            🤖 AI & Technology Enthusiast                     ║
 ║                                                              ║
-║       ─────────────────────────────────────────────          ║
+║            ─────────────────────────────────────────         ║
 ║                                                              ║
-║       LEARN  •  BUILD  •  SECURE  •  INNOVATE               ║
+║            LEARN  •  BUILD  •  SECURE  •  INNOVATE           ║
 ║                                                              ║
 ╚══════════════════════════════════════════════════════════════╝
+```
 
+### Connect With Me
 
+[![GitHub](https://img.shields.io/badge/GitHub-yogesh--12git-181717?style=for-the-badge&logo=github)](https://github.com/yogesh-12git)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Yogesh%20S.-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/yogesh-subramanian-b65935315/)
+[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail)](mailto:your.email@example.com)
 
+</div>
+
+---
+
+## 📞 SUPPORT & FEEDBACK
+
+Have questions or feedback? Here's how to reach out:
+
+- **Issues** — Report bugs or suggest features via [GitHub Issues](https://github.com/yogesh-12git/csa5123-cryptography/issues)
+- **Discussions** — Join conversations in [GitHub Discussions](https://github.com/yogesh-12git/csa5123-cryptography/discussions)
+- **Email** — Direct inquiries to the author
+- **Star** — If you find this helpful, please star ⭐ the repository!
+
+---
+
+<div align="center">
+
+### Made with ❤️ for the Cryptography Community
+
+**Explore • Learn • Secure • Innovate**
+
+![Python](https://img.shields.io/badge/Made%20with-Python-3776AB?style=flat-square&logo=python)
+![Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=flat-square)
+![Open Source](https://img.shields.io/badge/Open%20Source-Yes-green?style=flat-square)
+
+</div>
